@@ -836,6 +836,11 @@ a {
 
 		.menu-items {
 			background-color: @indigo500;
+			transition-delay: @delayUnit * 10;
+
+			@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
+				transition-delay: @mobileDelayUnit * 9;
+			}
 
 			.menu-item {
 				visibility: hidden;
@@ -920,7 +925,11 @@ a {
 			transform: none;
 			opacity: 0;
 			transition: visibility 150ms, opacity 150ms;
-			transition-delay:  @delayUnit * 10;
+			transition-delay: @delayUnit * 10;
+
+			@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
+				transition-delay: @mobileDelayUnit * 9;
+			}
 
 			.active& {
 				transform: none;
@@ -953,6 +962,10 @@ a {
 			transform: scale(0.3);
 			transition: transform .1s, box-shadow .2s;
 			transition-delay: @delayUnit * 10;
+
+			@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
+				transition-delay: @mobileDelayUnit * 9;
+			}
 
 			.active& {
 				transform: scale(1);
