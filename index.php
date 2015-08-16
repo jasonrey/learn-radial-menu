@@ -27,6 +27,20 @@
 			<?php include('menu.php'); ?>
 			<div class="description">Forward - Reverse</div>
 		</div>
+
+		<div class="menu menu-1 menu-corner not-active">
+			<div class="box-frame">
+				<?php include('menu-corner.php'); ?>
+			</div>
+			<div class="description">Forward - Forward</div>
+		</div>
+
+		<div class="menu menu-1 menu-1-reverse menu-corner active">
+			<div class="box-frame">
+				<?php include('menu-corner.php'); ?>
+			</div>
+			<div class="description">Forward - Reverse</div>
+		</div>
 	</div>
 
 	<div class="section">
@@ -39,6 +53,20 @@
 
 		<div class="menu menu-1 menu-1-reverse menu-1-fade active">
 			<?php include('menu.php'); ?>
+			<div class="description">Forward - Reverse</div>
+		</div>
+
+		<div class="menu menu-1 menu-1-fade menu-corner not-active">
+			<div class="box-frame">
+				<?php include('menu-corner.php'); ?>
+			</div>
+			<div class="description">Forward - Forward</div>
+		</div>
+
+		<div class="menu menu-1 menu-1-reverse menu-1-fade menu-corner active">
+			<div class="box-frame">
+				<?php include('menu-corner.php'); ?>
+			</div>
 			<div class="description">Forward - Reverse</div>
 		</div>
 	</div>
@@ -55,6 +83,20 @@
 			<?php include('menu.php'); ?>
 			<div class="description">Forward - Reverse</div>
 		</div>
+
+		<div class="menu menu-1 menu-1-scale menu-corner not-active">
+			<div class="box-frame">
+				<?php include('menu-corner.php'); ?>
+			</div>
+			<div class="description">Forward - Forward</div>
+		</div>
+
+		<div class="menu menu-1 menu-1-reverse menu-1-scale menu-corner active">
+			<div class="box-frame">
+				<?php include('menu-corner.php'); ?>
+			</div>
+			<div class="description">Forward - Reverse</div>
+		</div>
 	</div>
 
 	<div class="section">
@@ -67,6 +109,20 @@
 
 		<div class="menu menu-2 menu-2-reverse active">
 			<?php include('menu.php'); ?>
+			<div class="description">Forward - Reverse</div>
+		</div>
+
+		<div class="menu menu-2 menu-corner not-active">
+			<div class="box-frame">
+				<?php include('menu-corner.php'); ?>
+			</div>
+			<div class="description">Forward - Forward</div>
+		</div>
+
+		<div class="menu menu-2 menu-2-reverse menu-corner active">
+			<div class="box-frame">
+				<?php include('menu-corner.php'); ?>
+			</div>
 			<div class="description">Forward - Reverse</div>
 		</div>
 	</div>
@@ -83,6 +139,20 @@
 			<?php include('menu.php'); ?>
 			<div class="description">Forward - Reverse</div>
 		</div>
+
+		<div class="menu menu-2 menu-2-fade menu-corner not-active">
+			<div class="box-frame">
+				<?php include('menu-corner.php'); ?>
+			</div>
+			<div class="description">Forward - Forward</div>
+		</div>
+
+		<div class="menu menu-2 menu-2-reverse menu-2-fade menu-corner active">
+			<div class="box-frame">
+				<?php include('menu-corner.php'); ?>
+			</div>
+			<div class="description">Forward - Reverse</div>
+		</div>
 	</div>
 
 	<div class="section">
@@ -97,6 +167,20 @@
 			<?php include('menu.php'); ?>
 			<div class="description">Forward - Reverse</div>
 		</div>
+
+		<div class="menu menu-2 menu-2-fade menu-2-fade-alternative menu-corner not-active">
+			<div class="box-frame">
+				<?php include('menu-corner.php'); ?>
+			</div>
+			<div class="description">Forward - Forward</div>
+		</div>
+
+		<div class="menu menu-2 menu-2-reverse menu-2-fade menu-2-fade-alternative menu-corner active">
+			<div class="box-frame">
+				<?php include('menu-corner.php'); ?>
+			</div>
+			<div class="description">Forward - Reverse</div>
+		</div>
 	</div>
 
 	<div class="section">
@@ -109,6 +193,20 @@
 
 		<div class="menu menu-2 menu-2-reverse menu-2-scale active">
 			<?php include('menu.php'); ?>
+			<div class="description">Forward - Reverse</div>
+		</div>
+
+		<div class="menu menu-2 menu-2-scale menu-corner not-active">
+			<div class="box-frame">
+				<?php include('menu-corner.php'); ?>
+			</div>
+			<div class="description">Forward - Forward</div>
+		</div>
+
+		<div class="menu menu-2 menu-2-reverse menu-2-scale menu-corner active">
+			<div class="box-frame">
+				<?php include('menu-corner.php'); ?>
+			</div>
 			<div class="description">Forward - Reverse</div>
 		</div>
 	</div>
