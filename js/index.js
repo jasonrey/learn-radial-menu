@@ -1,8 +1,11 @@
 $(function() {
-	var $menu = $('.menu'),
-		$mainButton = $('.main-button');
+	var $document = $(document),
+		$body = $('body'),
+		$menu = $('.menu'),
+		$mainButton = $('.main-button'),
+		event = 'ontouchstart' in document.documentElement ? 'touchstart' : 'click';
 
-	$menu.on('click', '.main-button', function(ev) {
+	$menu.on(event, '.main-button', function(ev) {
 		var button = $(this),
 			menu = $(ev.delegateTarget);
 
