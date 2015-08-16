@@ -180,6 +180,7 @@ a {
 	}
 
 	@delayUnit: 35ms;
+	@mobileDelayUnit: 60ms;
 
 	&.menu-1 {
 		.main-button {
@@ -234,6 +235,40 @@ a {
 
 				&.item-8 {
 					transition-delay: @delayUnit * 7;
+				}
+
+				@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
+					&.item-1 {
+						transition-delay: 0s;
+					}
+
+					&.item-2 {
+						transition-delay: @mobileDelayUnit;
+					}
+
+					&.item-3 {
+						transition-delay: @mobileDelayUnit * 2;
+					}
+
+					&.item-4 {
+						transition-delay: @mobileDelayUnit * 3;
+					}
+
+					&.item-5 {
+						transition-delay: @mobileDelayUnit * 4;
+					}
+
+					&.item-6 {
+						transition-delay: @mobileDelayUnit * 5;
+					}
+
+					&.item-7 {
+						transition-delay: @mobileDelayUnit * 6;
+					}
+
+					&.item-8 {
+						transition-delay: @mobileDelayUnit * 7;
+					}
 				}
 
 				.active& {
@@ -322,49 +357,41 @@ a {
 				&.item-1 {
 					top: 0;
 					left: 6.5rem;
-					transition-delay: 0s;
 				}
 
 				&.item-2 {
 					top: 2rem;
 					left: 2rem;
-					transition-delay: @delayUnit;
 				}
 
 				&.item-3 {
 					top: 6.5rem;
 					left: 0;
-					transition-delay: @delayUnit * 2;
 				}
 
 				&.item-4 {
 					top: 11rem;
 					left: 2rem;
-					transition-delay: @delayUnit * 3;
 				}
 
 				&.item-5 {
 					top: 13rem;
 					left: 6.5rem;
-					transition-delay: @delayUnit * 4;
 				}
 
 				&.item-6 {
 					top: 11rem;
 					left: 11rem;
-					transition-delay: @delayUnit * 5;
 				}
 
 				&.item-7 {
 					top: 6.5rem;
 					left: 13rem;
-					transition-delay: @delayUnit * 6;
 				}
 
 				&.item-8 {
 					top: 2rem;
 					left: 11rem;
-					transition-delay: @delayUnit * 7;
 				}
 
 				.menu-item-button {
@@ -407,49 +434,41 @@ a {
 				&.item-1 {
 					top: 0;
 					left: 6.5rem;
-					transition-delay: 0s;
 				}
 
 				&.item-2 {
 					top: 2rem;
 					left: 2rem;
-					transition-delay: @delayUnit;
 				}
 
 				&.item-3 {
 					top: 6.5rem;
 					left: 0;
-					transition-delay: @delayUnit * 2;
 				}
 
 				&.item-4 {
 					top: 11rem;
 					left: 2rem;
-					transition-delay: @delayUnit * 3;
 				}
 
 				&.item-5 {
 					top: 13rem;
 					left: 6.5rem;
-					transition-delay: @delayUnit * 4;
 				}
 
 				&.item-6 {
 					top: 11rem;
 					left: 11rem;
-					transition-delay: @delayUnit * 5;
 				}
 
 				&.item-7 {
 					top: 6.5rem;
 					left: 13rem;
-					transition-delay: @delayUnit * 6;
 				}
 
 				&.item-8 {
 					top: 2rem;
 					left: 11rem;
-					transition-delay: @delayUnit * 7;
 				}
 
 				.menu-item-button {
@@ -498,6 +517,40 @@ a {
 					transition-delay: 0s;
 				}
 
+				@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
+					&.item-1 {
+						transition-delay: @mobileDelayUnit * 7;
+					}
+
+					&.item-2 {
+						transition-delay: @mobileDelayUnit * 6;
+					}
+
+					&.item-3 {
+						transition-delay: @mobileDelayUnit * 5;
+					}
+
+					&.item-4 {
+						transition-delay: @mobileDelayUnit * 4;
+					}
+
+					&.item-5 {
+						transition-delay: @mobileDelayUnit * 3;
+					}
+
+					&.item-6 {
+						transition-delay: @mobileDelayUnit * 2;
+					}
+
+					&.item-7 {
+						transition-delay: @mobileDelayUnit;
+					}
+
+					&.item-8 {
+						transition-delay: 0s;
+					}
+				}
+
 				.active& {
 					&.item-1 {
 						transition-delay: 0s;
@@ -530,10 +583,47 @@ a {
 					&.item-8 {
 						transition-delay: @delayUnit * 7;
 					}
+
+					@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
+						&.item-1 {
+							transition-delay: 0s;
+						}
+
+						&.item-2 {
+							transition-delay: @mobileDelayUnit;
+						}
+
+						&.item-3 {
+							transition-delay: @mobileDelayUnit * 2;
+						}
+
+						&.item-4 {
+							transition-delay: @mobileDelayUnit * 3;
+						}
+
+						&.item-5 {
+							transition-delay: @mobileDelayUnit * 4;
+						}
+
+						&.item-6 {
+							transition-delay: @mobileDelayUnit * 5;
+						}
+
+						&.item-7 {
+							transition-delay: @mobileDelayUnit * 6;
+						}
+
+						&.item-8 {
+							transition-delay: @mobileDelayUnit * 7;
+						}
+					}
 				}
 			}
 		}
 	}
+
+	@transitionUnit: 100ms;
+	@mobileTransitionUnit: 150ms;
 
 	&.menu-2 {
 		.main-button {
@@ -556,8 +646,13 @@ a {
 			background-color: @blue500;
 			box-shadow: .2rem .2rem .4rem rgba(0, 0, 0, 0.2);
 			transform: scale(0.3);
-			transition: transform .1s;
+			transition: transform @transitionUnit;
 			transition-delay: @delayUnit * 10;
+
+			@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
+				transition: transform @mobileTransitionUnit;
+				transition-delay: @mobileDelayUnit * 9;
+			}
 
 			.active& {
 				transform: scale(1);
@@ -601,53 +696,121 @@ a {
 					transition-delay: @delayUnit * 7;
 				}
 
+				@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
+					&.item-1 {
+						transition-delay: 0s;
+					}
+
+					&.item-2 {
+						transition-delay: @mobileDelayUnit;
+					}
+
+					&.item-3 {
+						transition-delay: @mobileDelayUnit * 2;
+					}
+
+					&.item-4 {
+						transition-delay: @mobileDelayUnit * 3;
+					}
+
+					&.item-5 {
+						transition-delay: @mobileDelayUnit * 4;
+					}
+
+					&.item-6 {
+						transition-delay: @mobileDelayUnit * 5;
+					}
+
+					&.item-7 {
+						transition-delay: @mobileDelayUnit * 6;
+					}
+
+					&.item-8 {
+						transition-delay: @mobileDelayUnit * 7;
+					}
+				}
+
 				.active& {
 					&.item-1 {
 						top: 0;
 						left: 6.5rem;
-						transition-delay: 100ms;
+						transition-delay: @transitionUnit;
 					}
 
 					&.item-2 {
 						top: 2rem;
 						left: 2rem;
-						transition-delay: 100ms + @delayUnit;
+						transition-delay: @transitionUnit + @delayUnit;
 					}
 
 					&.item-3 {
 						top: 6.5rem;
 						left: 0;
-						transition-delay: 100ms + (@delayUnit * 2);
+						transition-delay: @transitionUnit + (@delayUnit * 2);
 					}
 
 					&.item-4 {
 						top: 11rem;
 						left: 2rem;
-						transition-delay: 100ms + (@delayUnit * 3);
+						transition-delay: @transitionUnit + (@delayUnit * 3);
 					}
 
 					&.item-5 {
 						top: 13rem;
 						left: 6.5rem;
-						transition-delay: 100ms + (@delayUnit * 4);
+						transition-delay: @transitionUnit + (@delayUnit * 4);
 					}
 
 					&.item-6 {
 						top: 11rem;
 						left: 11rem;
-						transition-delay: 100ms + (@delayUnit * 5);
+						transition-delay: @transitionUnit + (@delayUnit * 5);
 					}
 
 					&.item-7 {
 						top: 6.5rem;
 						left: 13rem;
-						transition-delay: 100ms + (@delayUnit * 6);
+						transition-delay: @transitionUnit + (@delayUnit * 6);
 					}
 
 					&.item-8 {
 						top: 2rem;
 						left: 11rem;
-						transition-delay: 100ms + (@delayUnit * 7);
+						transition-delay: @transitionUnit + (@delayUnit * 7);
+					}
+
+					@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
+						&.item-1 {
+							transition-delay: @mobileTransitionUnit;
+						}
+
+						&.item-2 {
+							transition-delay: @mobileTransitionUnit + @mobileDelayUnit;
+						}
+
+						&.item-3 {
+							transition-delay: @mobileTransitionUnit + (@mobileDelayUnit * 2);
+						}
+
+						&.item-4 {
+							transition-delay: @mobileTransitionUnit + (@mobileDelayUnit * 3);
+						}
+
+						&.item-5 {
+							transition-delay: @mobileTransitionUnit + (@mobileDelayUnit * 4);
+						}
+
+						&.item-6 {
+							transition-delay: @mobileTransitionUnit + (@mobileDelayUnit * 5);
+						}
+
+						&.item-7 {
+							transition-delay: @mobileTransitionUnit + (@mobileDelayUnit * 6);
+						}
+
+						&.item-8 {
+							transition-delay: @mobileTransitionUnit + (@mobileDelayUnit * 7);
+						}
 					}
 				}
 			}
@@ -677,7 +840,11 @@ a {
 			.menu-item {
 				visibility: hidden;
 				opacity: 0;
-				transition: visibility 100ms, opacity 100ms;
+				transition: visibility @transitionUnit, opacity @transitionUnit;
+
+				@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
+					transition: visibility @mobileTransitionUnit, opacity @mobileTransitionUnit;
+				}
 
 				.active& {
 					visibility: visible;
@@ -688,84 +855,44 @@ a {
 				&.item-1 {
 					top: 0;
 					left: 6.5rem;
-					transition-delay: 0s;
 				}
 
 				&.item-2 {
 					top: 2rem;
 					left: 2rem;
-					transition-delay: @delayUnit;
 				}
 
 				&.item-3 {
 					top: 6.5rem;
 					left: 0;
-					transition-delay: @delayUnit * 2;
 				}
 
 				&.item-4 {
 					top: 11rem;
 					left: 2rem;
-					transition-delay: @delayUnit * 3;
 				}
 
 				&.item-5 {
 					top: 13rem;
 					left: 6.5rem;
-					transition-delay: @delayUnit * 4;
 				}
 
 				&.item-6 {
 					top: 11rem;
 					left: 11rem;
-					transition-delay: @delayUnit * 5;
 				}
 
 				&.item-7 {
 					top: 6.5rem;
 					left: 13rem;
-					transition-delay: @delayUnit * 6;
 				}
 
 				&.item-8 {
 					top: 2rem;
 					left: 11rem;
-					transition-delay: @delayUnit * 7;
 				}
 
-				.active& {
-					&.item-1 {
-						transition-delay: 100ms;
-					}
 
-					&.item-2 {
-						transition-delay: 100ms + @delayUnit;
-					}
-
-					&.item-3 {
-						transition-delay: 100ms + (@delayUnit * 2);
-					}
-
-					&.item-4 {
-						transition-delay: 100ms + (@delayUnit * 3);
-					}
-
-					&.item-5 {
-						transition-delay: 100ms + (@delayUnit * 4);
-					}
-
-					&.item-6 {
-						transition-delay: 100ms + (@delayUnit * 5);
-					}
-
-					&.item-7 {
-						transition-delay: 100ms + (@delayUnit * 6);
-					}
-
-					&.item-8 {
-						transition-delay: 100ms + (@delayUnit * 7);
-					}
-				}
 			}
 		}
 	}
@@ -839,85 +966,45 @@ a {
 				&.item-1 {
 					top: 0;
 					left: 6.5rem;
-					transition-delay: 0s;
 				}
 
 				&.item-2 {
 					top: 2rem;
 					left: 2rem;
-					transition-delay: @delayUnit;
 				}
 
 				&.item-3 {
 					top: 6.5rem;
 					left: 0;
-					transition-delay: @delayUnit * 2;
 				}
 
 				&.item-4 {
 					top: 11rem;
 					left: 2rem;
-					transition-delay: @delayUnit * 3;
 				}
 
 				&.item-5 {
 					top: 13rem;
 					left: 6.5rem;
-					transition-delay: @delayUnit * 4;
 				}
 
 				&.item-6 {
 					top: 11rem;
 					left: 11rem;
-					transition-delay: @delayUnit * 5;
 				}
 
 				&.item-7 {
 					top: 6.5rem;
 					left: 13rem;
-					transition-delay: @delayUnit * 6;
 				}
 
 				&.item-8 {
 					top: 2rem;
 					left: 11rem;
-					transition-delay: @delayUnit * 7;
 				}
 
 				.active& {
 					transform: scale(1);
-
-					&.item-1 {
-						transition-delay: 100ms;
-					}
-
-					&.item-2 {
-						transition-delay: 100ms + @delayUnit;
-					}
-
-					&.item-3 {
-						transition-delay: 100ms + (@delayUnit * 2);
-					}
-
-					&.item-4 {
-						transition-delay: 100ms + (@delayUnit * 3);
-					}
-
-					&.item-5 {
-						transition-delay: 100ms + (@delayUnit * 4);
-					}
-
-					&.item-6 {
-						transition-delay: 100ms + (@delayUnit * 5);
-					}
-
-					&.item-7 {
-						transition-delay: 100ms + (@delayUnit * 6);
-					}
-
-					&.item-8 {
-						transition-delay: 100ms + (@delayUnit * 7);
-					}
 				}
 			}
 		}
@@ -958,37 +1045,105 @@ a {
 					transition-delay: 0s;
 				}
 
-				.active& {
+				@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
 					&.item-1 {
-						transition-delay: 100ms;
+						transition-delay: @mobileDelayUnit * 7;
 					}
 
 					&.item-2 {
-						transition-delay: 100ms + @delayUnit;
+						transition-delay: @mobileDelayUnit * 6;
 					}
 
 					&.item-3 {
-						transition-delay: 100ms + (@delayUnit * 2);
+						transition-delay: @mobileDelayUnit * 5;
 					}
 
 					&.item-4 {
-						transition-delay: 100ms + (@delayUnit * 3);
+						transition-delay: @mobileDelayUnit * 4;
 					}
 
 					&.item-5 {
-						transition-delay: 100ms + (@delayUnit * 4);
+						transition-delay: @mobileDelayUnit * 3;
 					}
 
 					&.item-6 {
-						transition-delay: 100ms + (@delayUnit * 5);
+						transition-delay: @mobileDelayUnit * 2;
 					}
 
 					&.item-7 {
-						transition-delay: 100ms + (@delayUnit * 6);
+						transition-delay: @mobileDelayUnit;
 					}
 
 					&.item-8 {
-						transition-delay: 100ms + (@delayUnit * 7);
+						transition-delay: 0s;
+					}
+				}
+
+				.active& {
+					&.item-1 {
+						transition-delay: @transitionUnit;
+					}
+
+					&.item-2 {
+						transition-delay: @transitionUnit + @delayUnit;
+					}
+
+					&.item-3 {
+						transition-delay: @transitionUnit + (@delayUnit * 2);
+					}
+
+					&.item-4 {
+						transition-delay: @transitionUnit + (@delayUnit * 3);
+					}
+
+					&.item-5 {
+						transition-delay: @transitionUnit + (@delayUnit * 4);
+					}
+
+					&.item-6 {
+						transition-delay: @transitionUnit + (@delayUnit * 5);
+					}
+
+					&.item-7 {
+						transition-delay: @transitionUnit + (@delayUnit * 6);
+					}
+
+					&.item-8 {
+						transition-delay: @transitionUnit + (@delayUnit * 7);
+					}
+
+					@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
+						&.item-1 {
+							transition-delay: @mobileTransitionUnit;
+						}
+
+						&.item-2 {
+							transition-delay: @mobileTransitionUnit + @mobileDelayUnit;
+						}
+
+						&.item-3 {
+							transition-delay: @mobileTransitionUnit + (@mobileDelayUnit * 2);
+						}
+
+						&.item-4 {
+							transition-delay: @mobileTransitionUnit + (@mobileDelayUnit * 3);
+						}
+
+						&.item-5 {
+							transition-delay: @mobileTransitionUnit + (@mobileDelayUnit * 4);
+						}
+
+						&.item-6 {
+							transition-delay: @mobileTransitionUnit + (@mobileDelayUnit * 5);
+						}
+
+						&.item-7 {
+							transition-delay: @mobileTransitionUnit + (@mobileDelayUnit * 6);
+						}
+
+						&.item-8 {
+							transition-delay: @mobileTransitionUnit + (@mobileDelayUnit * 7);
+						}
 					}
 				}
 			}
