@@ -183,8 +183,8 @@ a {
 		font-size: 1.6rem;
 	}
 
-	@delayUnit: 35ms;
-	@mobileDelayUnit: 70ms;
+	@delayUnit: 40ms;
+	@mobileDelayUnit: 100ms;
 
 	&.menu-1 {
 		.main-button {
@@ -1225,66 +1225,6 @@ a {
 				}
 			}
 		}
-
-		&.menu-corner {
-			.menu-items {
-				.menu-item {
-					&.item-1 {
-						transition-delay: @delayUnit * 2;
-					}
-
-					&.item-2 {
-						transition-delay: @delayUnit;
-					}
-
-					&.item-3 {
-						transition-delay: 0s;
-					}
-
-					@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
-						&.item-1 {
-							transition-delay: @mobileDelayUnit * 2;
-						}
-
-						&.item-2 {
-							transition-delay: @mobileDelayUnit;
-						}
-
-						&.item-3 {
-							transition-delay: 0s;
-						}
-					}
-
-					.active& {
-						&.item-1 {
-							transition-delay: @transitionUnit;
-						}
-
-						&.item-2 {
-							transition-delay: @transitionUnit + @delayUnit;
-						}
-
-						&.item-3 {
-							transition-delay: @transitionUnit + (@delayUnit * 2);
-						}
-
-						@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
-							&.item-1 {
-								transition-delay: @mobileTransitionUnit;
-							}
-
-							&.item-2 {
-								transition-delay: @mobileTransitionUnit + @mobileDelayUnit;
-							}
-
-							&.item-3 {
-								transition-delay: @mobileTransitionUnit + (@mobileDelayUnit * 2);
-							}
-						}
-					}
-				}
-			}
-		}
 	}
 
 	&.menu-corner {
@@ -1298,11 +1238,12 @@ a {
 		.main {
 			top: 11.5rem;
 			left: 11.5rem;
-			transition: top 100ms, left 100ms;
-			transition-delay: @delayUnit * 4;
+			transition: top @transitionUnit, left @transitionUnit;
+			transition-delay: @delayUnit * 3;
 
 			@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
-				transition-delay: @mobileDelayUnit * 4;
+				transition: top @mobileTransitionUnit, left @mobileTransitionUnit;
+				transition-delay: @mobileDelayUnit * 3;
 			}
 
 			.active& {
@@ -1310,50 +1251,178 @@ a {
 				left: 13rem;
 				transition-delay: 0s;
 			}
+
+			.menu-2& {
+				transition-delay: @transitionUnit + @delayUnit * 3;
+
+				@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
+					transition-delay: @mobileTransitionUnit + @mobileDelayUnit * 3;
+				}
+
+				.active& {
+					transition-delay: 0s;
+				}
+			}
 		}
 
 		.menu-items {
-			top: 5.5rem;
-			left: 5.5rem;
+			top: 7rem;
+			left: 7rem;
+			visibility: hidden;
 			transition: all @transitionUnit;
-			transition-delay: @delayUnit * 4;
+			transition-delay: @delayUnit * 3;
 
 			@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
 				transition: all @mobileTransitionUnit;
-				transition-delay: @mobileDelayUnit * 4;
+				transition-delay: @mobileDelayUnit * 3;
 			}
 
 			.active& {
-				top: 7rem;
-				left: 7rem;
-				transition-delay: 0s;
+				visibility: visible;
+				transition-delay: @transitionUnit;
+
+				@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
+					transition-delay: @mobileTransitionUnit;
+				}
 			}
 
 			.menu-item {
 				.active& {
 					&.item-1 {
-						transition-delay: 100ms;
+						transition-delay: @transitionUnit;
 					}
 
 					&.item-2 {
-						transition-delay: 100ms + @delayUnit;
+						transition-delay: @transitionUnit + @delayUnit;
 					}
 
 					&.item-3 {
-						transition-delay: 100ms + @delayUnit * 2;
+						transition-delay: @transitionUnit + @delayUnit * 2;
 					}
 
 					@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
 						&.item-1 {
-							transition-delay: 100ms;
+							transition-delay: @mobileTransitionUnit;
 						}
 
 						&.item-2 {
-							transition-delay: 100ms + @mobileDelayUnit;
+							transition-delay: @mobileTransitionUnit + @mobileDelayUnit;
 						}
 
 						&.item-3 {
-							transition-delay: 100ms + @mobileDelayUnit * 2;
+							transition-delay: @mobileTransitionUnit + @mobileDelayUnit * 2;
+						}
+					}
+				}
+
+				.menu-2& {
+					&.item-1 {
+						transition-delay: 0s;
+					}
+
+					&.item-2 {
+						transition-delay: @delayUnit;
+					}
+
+					&.item-3 {
+						transition-delay: @delayUnit * 2;
+					}
+
+					@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
+						&.item-1 {
+							transition-delay: 0s;
+						}
+
+						&.item-2 {
+							transition-delay: @mobileDelayUnit;
+						}
+
+						&.item-3 {
+							transition-delay: @mobileDelayUnit * 2;
+						}
+					}
+
+					.active& {
+						&.item-1 {
+							transition-delay: @transitionUnit + @transitionUnit;
+						}
+
+						&.item-2 {
+							transition-delay: @transitionUnit + @transitionUnit + @delayUnit;
+						}
+
+						&.item-3 {
+							transition-delay: @transitionUnit + @transitionUnit + @delayUnit * 2;
+						}
+
+						@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
+							&.item-1 {
+								transition-delay: @mobileTransitionUnit + @mobileTransitionUnit;
+							}
+
+							&.item-2 {
+								transition-delay: @mobileTransitionUnit + @mobileTransitionUnit + @mobileDelayUnit;
+							}
+
+							&.item-3 {
+								transition-delay: @mobileTransitionUnit + @mobileTransitionUnit + @mobileDelayUnit * 2;
+							}
+						}
+					}
+
+					.menu-2-reverse& {
+						&.item-1 {
+							transition-delay: @delayUnit * 2;
+						}
+
+						&.item-2 {
+							transition-delay: @delayUnit;
+						}
+
+						&.item-3 {
+							transition-delay: 0s;
+						}
+
+						@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
+							&.item-1 {
+								transition-delay: @mobileDelayUnit * 2;
+							}
+
+							&.item-2 {
+								transition-delay: @mobileDelayUnit;
+							}
+
+							&.item-3 {
+								transition-delay: 0s;
+							}
+						}
+
+						.active& {
+							&.item-1 {
+								transition-delay: @transitionUnit + @transitionUnit;
+							}
+
+							&.item-2 {
+								transition-delay: @transitionUnit + @transitionUnit + @delayUnit;
+							}
+
+							&.item-3 {
+								transition-delay: @transitionUnit + @transitionUnit + (@delayUnit * 2);
+							}
+
+							@media (max-device-width: 414px) and (-webkit-max-device-pixel-ratio: 3) {
+								&.item-1 {
+									transition-delay: @mobileTransitionUnit + @mobileTransitionUnit;
+								}
+
+								&.item-2 {
+									transition-delay: @mobileTransitionUnit + @mobileTransitionUnit + @mobileDelayUnit;
+								}
+
+								&.item-3 {
+									transition-delay: @mobileTransitionUnit + @mobileTransitionUnit + (@mobileDelayUnit * 2);
+								}
+							}
 						}
 					}
 				}
